@@ -1,0 +1,158 @@
+body
+{
+  background-color: hsl(217, 54%, 11%);
+
+}
+h1
+{
+  font-size: 20px;
+}
+p
+{
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  font-size: 18px;
+}
+svg
+{
+  margin: auto;
+}
+a
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover
+{
+  color: hsl(178, 100%, 50%);
+}
+.card
+{
+  width: 25%;
+  background-color: hsl(216, 50%, 16%);
+  margin: 10% auto 10%;
+  padding: 20px;
+  border-radius: 2%;
+  border-style: solid;
+  border-width: medium;
+  border-color: hsl(178, 100%, 50%);
+  font-family: 'Outfit', sans-serif;
+}
+.imagebox
+{
+  position: relative;
+   width: auto;
+   height: auto;
+   border-radius: 2%;
+}
+.imagebox .overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 2%;
+}
+.imagebox:hover .overlay
+{
+  display: block;
+  background: hsla(178, 100%, 50%, 0.6);
+}
+.card-img-top
+{
+  border-radius: 2%;
+  display: block;
+}
+.view-asset
+{
+  opacity: 1;
+  position: relative;
+  margin-left: 42%;
+  margin-top: 42%;
+}
+.card-title
+{
+  color: hsl(0, 0%, 100%);
+  padding: 4px 0 4px 0;
+}
+.card-body
+{
+  padding-left: 0;
+}
+.card-text
+{
+  font-size: 16px;
+}
+.buy
+{
+  font-size: 14px;
+  font-weight: bold;
+  display: inline;
+  vertical-align: middle;
+}
+.price
+{
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    display: inline;
+}
+.price p {
+  color: hsl(178, 100%, 50%);
+}
+.time
+{
+  font-weight: 300;
+  display: inline;
+  position: absolute;
+  right: 0;
+  padding-right: 20px;
+}
+.line
+{
+  border-style: solid;
+  height: 1px;
+  border-color: hsl(215, 51%, 70%);
+}
+.avatar
+{
+  width: 11%;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  border-radius: 50%;
+  display: inline;
+}
+.name {
+  display: inline;
+  padding: 10px;
+  font-size: 14px;
+}
+.attribution
+{
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a
+{
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 700px) {
+  .card{
+    width: 75%;
+  }
+}
+@media (min-width: 700px) {
+  .card{
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .card{
+    width: 25%;
+  }
+}
