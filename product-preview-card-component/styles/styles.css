@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+:root {
+  --desktop-image: url('../images/image-product-desktop.jpg');
+  --mobile-image: url('../images/image-product-mobile.jpg');
+  --cream-bg: #F2EAE2;
+  --card-border-radius: 10px;;
+  --deep-aquamarine: #3D8168;
+}
+
+body{
+  background-color: var(--cream-bg);
+}
+.product-type {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #6C7289;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-heading
+{
+  font-family: 'Fraunces', sans-serif;
+  color: #1C232B;
+}
+
+.add-to-cart
+{
+  width: 100%;
+  height: auto;
+  background-color: var(--deep-aquamarine);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;;
+}
+
+.attribution
+{
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a
+{
+  color: hsl(228, 45%, 44%);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .product-image {
+    content: var(--mobile-image);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .product-image {
+    content: var(--mobile-image);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .product-image {
+    content: var(--desktop-image);
+    display: flex;
+    height: 450px;
+    width: 300px;
+    border-top-left-radius: var(--card-border-radius);
+    border-bottom-left-radius: var(--card-border-radius);
+
+  }
+  .card
+  {
+    display: flex;
+    margin: 10% auto 10%;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    border-radius: var(--card-border-radius);
+  }
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+
+}  */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */

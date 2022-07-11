@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root
+{
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsla(216, 12%, 54%, 0.3);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsla(216, 12%, 8%, 1);
+  --background: hsl(220, 9%, 7%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body{
+  width: 100%;
+  height: calc(100vh - 1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  font-family: 'Overpass', sans-serif;
+}
+.card {
+  width: 400px;
+  height: auto;
+  padding: 20px 25px;
+  background: linear-gradient(
+    to bottom,
+    var(--dark-blue),
+    var(--very-dark-blue)
+    );
+  border-radius: 25px;
+}
+.card-content .star
+{
+  background-color:  var(--medium-grey);
+  padding: 10px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.card-title {
+  font-size: 30px;
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.card-description {
+  margin-bottom: 15px;
+  color: var(--light-grey);
+}
+.form {
+  width: 100%;
+}
+
+.form div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.radio-input
+{
+  display: none;
+}
+.radio-label
+{
+  display: block;
+  cursor: pointer;
+  margin-right: 55px;
+  margin-bottom: 50px;
+  padding-left: 15px;
+  color: var(--light-grey);
+}
+.radio-button {
+  display: inline-grid;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  background-color: var(--medium-grey);
+}
+.radio-button:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.radio-input:checked ~ .radio-label .radio-button::after
+{
+  opacity: 1;
+}
+
+.submit {
+  background-color: var(--orange);
+  border-style: none;
+  border-radius: 25px;
+  color: var(--white);
+  width: 100%;
+  padding: 10px;
+  bottom: 10px;
+  position: relative;
+}
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+.attribution
+{
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a
+{
+  color: hsl(228, 45%, 44%);
+}
