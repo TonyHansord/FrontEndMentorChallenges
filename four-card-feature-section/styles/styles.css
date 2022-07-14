@@ -18,19 +18,28 @@ body
 .header-container
 {
     text-align: center;
+    width: 80%;
+    margin-left: 10%;
 }
 .header-container--heading h1
 {
     font-size: 36px;
     color: var(--text-color);
+    letter-spacing: .25px;
 }
 .heading-regular
 {
-    font-weight: 400;
+    font-weight: 200;
 }
 .heading-bold
 {
     font-weight: 600;
+}
+.subheading {
+    font-weight: 200;
+    line-height: 25px;
+    font-size: 15px;
+    color: var(--text-color);
 }
 .card-container
 {
@@ -84,6 +93,13 @@ body
 }
 
 @media only screen and (min-width: 768px) {
+    .header-container
+{
+    text-align: center;
+    width: 44%;
+    margin-left: 28%;
+}
+    
     .card-container
     {
         display: grid;
