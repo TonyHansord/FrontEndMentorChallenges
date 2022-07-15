@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-* {
+* 
+{
     font-family: 'Poppins', sans-serif;
 }
 
 :root 
 {
-
     --text-color: #4D4F62;
 }
 
@@ -23,7 +23,7 @@ body
 }
 .header-container--heading h1
 {
-    font-size: 36px;
+    font-size: 5vw;
     color: var(--text-color);
     letter-spacing: .25px;
 }
@@ -35,7 +35,8 @@ body
 {
     font-weight: 600;
 }
-.subheading {
+.subheading 
+{
     font-weight: 200;
     line-height: 25px;
     font-size: 15px;
@@ -52,13 +53,14 @@ body
 }
 .feature-card
 {
+    position: relative;
     background-color: white;
-    width: 100%;
+    width: 80%;
     height: 250px;
     border-top-style: solid;
     border-width: 4px;
     border-radius: 5px;
-    margin-bottom: 3vw;
+    margin-bottom: 4vw;
     padding: 1vw;
 }
 
@@ -69,36 +71,79 @@ body
     color: var(--text-color);
 }
 
+.feature-card p 
+{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: .09px;
+}
+
+.feature-card img
+{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
 .attribution 
 { 
-    font-size: 11px; 
+    font-size: 14px; 
     text-align: center; 
 }
 .attribution a 
 { 
-    color: hsl(228, 45%, 44%); 
+    color: #549EF2; 
+    text-decoration: none;
 }
 
 #card1 {
     border-color: #44D3D2;
 }
+#card1 img {
+    content: url("../images/icon-supervisor.svg");
+}
 #card2 {
     border-color: #EA5454;
+}
+#card2 img {
+    content: url("../images/icon-team-builder.svg");
 }
 #card3 {
     border-color: #FCAE4A;
 }
+#card3 img {
+    content: url("../images/icon-karma.svg");
+}
 #card4 {
     border-color: #549EF2;
 }
-
-@media only screen and (min-width: 768px) {
-    .header-container
-{
-    text-align: center;
-    width: 44%;
-    margin-left: 28%;
+#card4 img {
+    content: url("../images/icon-calculator.svg");
 }
+
+@media only screen and (max-width: 768px) 
+{
+    .feature-card
+    {
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 768px) 
+{
+    .header-container
+    {
+        text-align: center;
+        width: 44%;
+        margin-left: 28%;
+    }
+
+    .header-container--heading h1
+    {
+        font-size: 3vw;
+    }
     
     .card-container
     {
@@ -107,15 +152,16 @@ body
         grid-template-columns: 33.3% 33.3% 33.3%;
         padding: 3vw 0;
     }
+
     .feature-card
     {
-        width: 28vw;
+        width: 25vw;
     }
+
     .col 
     {
         display: grid;
         align-items: center;
         justify-content: center;
-        
     }
 }
