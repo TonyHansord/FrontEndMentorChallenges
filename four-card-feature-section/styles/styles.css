@@ -76,7 +76,7 @@ body
 .feature-card p 
 {
     font-weight: 400;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 23px;
     letter-spacing: .09px;
 }
@@ -158,6 +158,10 @@ body
     .feature-card
     {
         width: 25vw;
+    }
+    .feature-card p 
+    {
+        font-size: 1.25vw;
     }
 
     .col 
