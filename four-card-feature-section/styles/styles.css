@@ -3,6 +3,7 @@
 * 
 {
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 :root 
@@ -62,6 +63,7 @@ body
     border-radius: 5px;
     margin-bottom: 4vw;
     padding: 1vw;
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card h3 
