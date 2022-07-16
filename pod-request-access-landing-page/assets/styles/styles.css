@@ -1,0 +1,42 @@
+
+
+* 
+{
+    box-sizing: border-box;
+}
+
+body 
+{
+    --dark-color: #121725;
+    --theme-green: #54E6AF;
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    background-color: var(--dark-color);
+    
+}
+body::before {
+    content: "";
+    background: url("../mobile/image-host.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.4;
+
+}
+
+.btn 
+{
+    position: relative;
+    background-color: var(--theme-green);
+    color: var(--dark-color);
+    border-radius: 50px;
+    border-style: none;
+    padding: 20px;
+    opacity: 1;
+}
