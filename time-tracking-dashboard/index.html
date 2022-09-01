@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+  </head>
+  <body>
+    <main class="main-grid">
+      <div class="card-tall" id="name-card">
+        <div class="name-content">
+          <img class="avatar" src="images/image-jeremy.png" alt="avatar" />
+          <div class="name-heading">
+            <p class="report">Report for</p>
+            <h1 class="name">Jeremy Robson</h1>
+          </div>
+        </div>
+        <ul class="timeframes">
+          <li class="list-item active" id="daily">Daily</li>
+          <li class="list-item" id="weekly">Weekly</li>
+          <li class="list-item" id="monthly">Monthly</li>
+        </ul>
+      </div>
+      <div class="card-container">
+        <div class="card" id="work-card">
+          <img class="card-icon" src="images/icon-work.svg" alt="work-icon" />
+          <div class="card-content">
+            <h1 class="card-heading">
+              <span class="heading">Work </span
+              ><span class="options-button"
+                ><img src="images/icon-ellipsis.svg" alt="options-btn"
+              /></span>
+            </h1>
+            <div class="time-container">
+              <p class="card-time">5hrs</p>
+              <!-- daily -->
+              <p class="card-prev">
+                <span class="previous-format"> Previous - </span>
+                <span class="prev-time">7hrs</span>
+              </p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" id="play-card">
+          <img class="card-icon" src="images/icon-play.svg" alt="play-icon" />
+          <div class="card-content">
+            <h1 class="card-heading">
+              <span class="heading">Play</span
+              ><span class="options-button"
+                ><img src="images/icon-ellipsis.svg" alt="options-btn"
+              /></span>
+            </h1>
+            <div class="time-container">
+              <p class="card-time">1hr</p>
+              <!-- daily -->
+              <p class="card-prev">
+                <span class="previous-format"> Previous - </span>
+                <span class="prev-time">2hrs</span>
+              </p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" id="study-card">
+          <img class="card-icon" src="images/icon-study.svg" alt="study-icon" />
+          <div class="card-content">
+            <h1 class="card-heading">
+              <span class="heading">Study</span
+              ><span class="options-button"
+                ><img src="images/icon-ellipsis.svg" alt="options-btn"
+              /></span>
+            </h1>
+            <div class="time-container">
+              <p class="card-time">0hrs</p>
+              <!-- daily -->
+              <p class="card-prev">
+                <span class="previous-format"> Previous - </span>
+                <span class="prev-time">1hr</span>
+              </p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" id="exercise-card">
+          <img
+            class="card-icon"
+            src="images/icon-exercise.svg"
+            alt="exercise-icon"
+          />
+          <div class="card-content">
+            <h1 class="card-heading">
+              <span class="heading">Exercise</span
+              ><span class="options-button"
+                ><img src="images/icon-ellipsis.svg" alt="options-btn"
+              /></span>
+            </h1>
+            <div class="time-container">
+              <p class="card-time">1hr</p>
+              <!-- daily -->
+              <p class="card-prev">
+                <span class="previous-format">
+                  <span class="previous-format"> Previous - </span>
+                </span>
+                <span class="prev-time">1hr</span>
+              </p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" id="social-card">
+          <img
+            class="card-icon"
+            src="images/icon-social.svg"
+            alt="social-icon"
+          />
+          <div class="card-content">
+            <h1 class="card-heading">
+              <span class="heading">Social</span
+              ><span class="options-button"
+                ><img src="images/icon-ellipsis.svg" alt="options-btn"
+              /></span>
+            </h1>
+            <div class="time-container">
+              <p class="card-time">1hr</p>
+              <!-- daily -->
+              <p class="card-prev">
+                <span class="previous-format"> Previous - </span>
+                <span class="prev-time">3hrs</span>
+              </p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card" id="self-care-card">
+          <img
+            class="card-icon"
+            src="images/icon-self-care.svg"
+            alt="self-care-icon"
+          />
+          <div class="card-content">
+            <h1 class="card-heading">
+              <span class="heading">Self Care</span
+              ><span class="options-button"
+                ><img src="images/icon-ellipsis.svg" alt="options-btn"
+              /></span>
+            </h1>
+            <div class="time-container">
+              <p class="card-time">0hrs</p>
+              <!-- daily -->
+              <p class="card-prev">
+                <span class="previous-format"> Previous - </span>
+                <span class="prev-time">1hr</span>
+              </p>
+            </div>
+            <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Tony Hansord</a>.
+      </div>
+    </footer>
+    <script type="module" src="scripts/index.js"></script>
+  </body>
+</html>

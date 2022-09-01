@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+
+$font-family: "Plus Jakarta Sans", sans-serif;
+$primary-accent-color: #f74780;
+$background-color: #ffffff;
+$secondary-color: #13183f;
+$backgroud-gradient-color: #f0f1ff;
+$main-gradient-color: #f028a7;
+$main-gradient-color2: #ff6f48;
+$secondary-gradient-color1: #4851ff;
+$light-font-color: #83869a;
+
+$footer-button-hover1: #b68beb;
+$footer-button-hover2: #f27eca;
+
+$border-radius: 1rem;
+$extra-bold-font: 800;
+$mobile-header-img: url(../assets/image-hero-mobile.webp);
+$desktop-header-img: url(../assets/image-hero-desktop.webp);
+$tablet-header-img: url(../assets/image-hero-tablet.webp);
+$page-padding: 0.5rem 15%;
+
+@mixin button(
+  $background-color1: $secondary-color,
+  $background-color2: $secondary-color
+) {
+  background-image: linear-gradient($background-color1, $background-color2);
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  border-style: none;
+  margin: 1rem 0;
+  color: $background-color;
+}
+
+@mixin branding($background: transparent) {
+  display: flex;
+  background-color: $background;
+  justify-content: space-between;
+  align-items: center;
+  padding: $page-padding;
+}
+
+* {
+  font-family: $font-family;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-section {
+  @include branding;
+  button {
+    @include button;
+  }
+}
+
+#button-header {
+  @include button($main-gradient-color, $main-gradient-color2);
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button::after {
+  opacity: 1;
+}
+
+#button-footer:hover {
+  @include button($footer-button-hover1, $footer-button-hover2);
+  opacity: 1;
+}
+
+.header-section {
+  position: relative;
+  padding: 5% 15%;
+  height: 50%;
+}
+
+.main-heading {
+  font-size: 2.75rem;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2rem 0;
+  color: $light-font-color;
+}
+
+.card {
+  display: grid;
+  gap: 1rem;
+  border-radius: $border-radius;
+  padding: 2rem;
+}
+
+.card-container {
+  display: grid;
+  gap: 1rem;
+  padding: $page-padding;
+  background-image: -webkit-linear-gradient(
+    $background-color,
+    $backgroud-gradient-color
+  );
+}
+
+.header-card {
+  background-image: -webkit-linear-gradient(
+    $main-gradient-color,
+    $main-gradient-color2
+  );
+  h1 {
+    font-size: 1.5rem;
+    font-weight: $extra-bold-font;
+    color: $background-color;
+  }
+}
+.course-card {
+  position: relative;
+  background-color: $background-color;
+  img {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    transform: scale(0.75) translateY(-75%);
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: $light-font-color;
+  }
+}
+
+.card-link {
+  color: $primary-accent-color;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  opacity: 0.7;
+}
+
+.footer-section {
+  @include branding($secondary-color);
+  button {
+    @include button($secondary-gradient-color1, $main-gradient-color);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .header-img {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    content: $mobile-header-img;
+    width: 80%;
+  }
+
+  .header-text {
+    width: 80vw;
+  }
+
+  .card-container {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .header-img {
+    position: absolute;
+    content: $tablet-header-img;
+    top: 0;
+    right: 0;
+    transform: translateY(-15%) translateX(40%);
+    z-index: -1;
+  }
+
+  .header-text {
+    width: 20vw;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    position: relative;
+  }
+
+  .header-text {
+    width: 20vw;
+  }
+
+  .header-img {
+    position: absolute;
+    content: $desktop-header-img;
+    top: 0;
+    right: 0;
+    transform: scale(80%) translateY(-40%) translateX(40%);
+    z-index: -1;
+  }
+
+  .card-container {
+    grid-template-columns: 33% 33% 33%;
+    gap: 2rem;
+  }
+}
